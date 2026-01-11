@@ -1,0 +1,27 @@
+# Copy this file to .env.local and fill in your values
+# 
+# To create .env.local:
+# 1. Copy this file: copy ENV_TEMPLATE.txt .env.local
+# 2. Edit .env.local with your actual values
+# 3. Never commit .env.local to Git!
+
+# Email Service (Resend)
+# Get your API key from https://resend.com
+RESEND_API_KEY=re_xxxxxxxxxxxxxxxxxxxxx
+CONTACT_EMAIL=info@digitalagency.it
+
+# Google Analytics
+# Get your Measurement ID from https://analytics.google.com
+# Format: G-XXXXXXXXXX
+NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
+
+# Facebook Pixel (Optional)
+# Get your Pixel ID from Facebook Business Manager
+NEXT_PUBLIC_FB_PIXEL_ID=xxxxxxxxxxxxx
+
+# Site URL (for production)
+NEXT_PUBLIC_SITE_URL=https://yourdomain.com
+
+# Environment
+NODE_ENV=development
+
