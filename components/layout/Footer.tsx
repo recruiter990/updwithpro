@@ -6,9 +6,8 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Instagram, href: "#", label: "Instagram" },
     { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
+    { icon: Linkedin, href: "https://www.linkedin.com/company/xerosofro/", label: "LinkedIn" },
   ];
 
   return (
@@ -108,7 +107,7 @@ export default function Footer() {
               <li className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                 <span className="text-gray text-sm">
-                  Ancona, Italia
+                  Milan, Italia
                 </span>
               </li>
             </ul>
@@ -132,6 +131,7 @@ export default function Footer() {
     </footer>
   );
 }
+
 
 
 
