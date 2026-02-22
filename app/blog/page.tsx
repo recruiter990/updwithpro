@@ -1,3 +1,4 @@
+
 import { Metadata } from "next";
 import Link from "next/link";
 import Card from "@/components/ui/Card";
@@ -197,4 +198,3 @@ export default function BlogPage() {
     </div>
   );
 }
-
