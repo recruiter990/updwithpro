@@ -1,10 +1,5 @@
 
-import { Metadata } from "next";
-import Link from "next/link";
-import Card from "@/components/ui/Card";
-import Badge from "@/components/ui/Badge";
-import { Calendar, Clock, ArrowRight } from "lucide-react";
-import Button from "@/components/ui/Button";
+import { blogPosts } from "@/lib/blog-posts";
 
 export const metadata: Metadata = {
   title: "Blog | Guide e Consigli di Marketing Digitale",
@@ -198,3 +193,4 @@ export default function BlogPage() {
     </div>
   );
 }
+
