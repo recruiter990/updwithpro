@@ -10,7 +10,8 @@ interface BlogPostPageProps {
 }
 
 export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
-  const post = getBlogPostById(Number(params.id));
+  const { id } = await Promise.resolve(params);
+  const post = getBlogPostById(Number(id));
   if (!post) return { title: "Post non trovato" };
   return {
     title: `${post.title} | Blog`,
