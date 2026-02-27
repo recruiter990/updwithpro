@@ -5,8 +5,6 @@ export const metadata: Metadata = {
   title: "Blog | Guide e Consigli di Marketing Digitale",
   description: "Scopri guide, consigli e strategie di marketing digitale per far crescere il tuo business locale.",
 };
-
-const blogPosts = [
   {
     id: 1,
     title: "Social Media Management: Guida Completa",
@@ -193,4 +191,5 @@ export default function BlogPage() {
     </div>
   );
 }
+
 
