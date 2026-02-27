@@ -125,8 +125,9 @@ function renderContent(content: string) {
   return elements;
 }
 
-export default function BlogPostPage({ params }: BlogPostPageProps) {
-  const post = getBlogPostById(Number(params.id));
+export default async function BlogPostPage({ params }: BlogPostPageProps) {
+  const { id } = await Promise.resolve(params);
+  const post = getBlogPostById(Number(id));
   if (!post) notFound();
 
   const currentIndex = blogPosts.findIndex((p) => p.id === post.id);
