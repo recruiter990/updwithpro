@@ -5,7 +5,8 @@ import { motion, useInView } from "framer-motion";
 import { ArrowRight, TrendingUp } from "lucide-react";
 import Link from "next/link";
 import Button from "@/components/ui/Button";
-import FloatingShapes from "@/components/3d/FloatingShapes";
+import dynamic from "next/dynamic";
+const FloatingShapes = dynamic(() => import("@/components/3d/FloatingShapes"), { ssr: false });
 import { STATS } from "@/lib/constants";
 import AnimatedCounter from "@/components/ui/AnimatedCounter";
 
@@ -112,4 +113,5 @@ export default function Hero() {
     </section>
   );
 }
+
 
