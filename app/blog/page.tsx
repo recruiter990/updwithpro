@@ -45,7 +45,6 @@ export default function BlogPage() {
             <Card key={post.id} variant="glass" hover className="flex flex-col h-full">
               <div className="aspect-video rounded-lg overflow-hidden mb-4">
                 <img src={post.image} alt={post.title} className="w-full h-full object-cover" />
-</div>
               </div>
               <div className="flex items-center gap-2 mb-3">
                 <Badge variant="secondary">{post.category}</Badge>
@@ -96,4 +95,3 @@ export default function BlogPage() {
     </div>
   );
 }
-
