@@ -162,16 +162,6 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             </div>
           </div>
         </div>
-
-        <div className="aspect-video rounded-2xl bg-gradient-to-br from-primary/20 via-primary/10 to-accent/20 mb-10 overflow-hidden flex items-center justify-center">
-          {post.image ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img src={post.image} alt={post.title} className="w-full h-full object-cover" />
-          ) : (
-            <Calendar className="h-20 w-20 text-primary/40" />
-          )}
-        </div>
-
         <p className="text-xl text-gray leading-relaxed mb-10 pb-10 border-b border-gray/20 dark:border-white/10 italic font-medium">
           {post.excerpt}
         </p>
