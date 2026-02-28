@@ -43,8 +43,9 @@ export default function BlogPage() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {blogPosts.map((post) => (
             <Card key={post.id} variant="glass" hover className="flex flex-col h-full">
-              <div className="aspect-video rounded-lg bg-gradient-primary/20 mb-4 flex items-center justify-center">
-                <Calendar className="h-16 w-16 text-primary/50" />
+              <div className="aspect-video rounded-lg overflow-hidden mb-4">
+                <img src={post.image} alt={post.title} className="w-full h-full object-cover" />
+</div>
               </div>
               <div className="flex items-center gap-2 mb-3">
                 <Badge variant="secondary">{post.category}</Badge>
@@ -95,3 +96,4 @@ export default function BlogPage() {
     </div>
   );
 }
+
