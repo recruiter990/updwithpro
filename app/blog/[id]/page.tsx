@@ -72,8 +72,7 @@ function renderContent(content: string) {
         elements.push(
           <figure key={i} className="my-8">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={src} alt={alt} className="w-full rounded-xl object-cover shadow-lg" style={{ maxHeight: "420px" }}
-              onError={(e) => { const p = (e.target as HTMLImageElement).closest("figure"); if (p) (p as HTMLElement).style.display = "none"; }} />
+            <img src={src} alt={alt} className="w-full rounded-xl object-cover shadow-lg" style={{ maxHeight: "420px" }} />
             {caption && <figcaption className="text-center text-sm text-gray mt-2 italic">{caption}</figcaption>}
           </figure>
         );
@@ -167,8 +166,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         <div className="aspect-video rounded-2xl bg-gradient-to-br from-primary/20 via-primary/10 to-accent/20 mb-10 overflow-hidden flex items-center justify-center">
           {post.image ? (
             // eslint-disable-next-line @next/next/no-img-element
-            <img src={post.image} alt={post.title} className="w-full h-full object-cover"
-              onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
+            <img src={post.image} alt={post.title} className="w-full h-full object-cover" />
           ) : (
             <Calendar className="h-20 w-20 text-primary/40" />
           )}
